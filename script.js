@@ -46,10 +46,30 @@ function optionDos(){
 
 //3. En este ejercicio deberá calcular el promedio de notas del usuario. 
 function optionTres(){
+    var number=[];
+    var promedio = 0;
+    number[0] = parseInt(prompt("Ingresar el promedio de notas de Matematica:"));
+    number[1] = parseInt(prompt("Ingresar el promedio de notas de Fisica:"));
+    number[2] = parseInt(prompt("Ingresar el promedio de notas de Ciencias:"));
+    for(nota of number){
+        promedio += nota; 
+    }
+    alert(Math.round(promedio/number.length));
+}
 
-
-
-
+//4. Solicite al usuario escribir el nombre de 3 frutas. 
+function optionCuatro(){
+    var fruit=[];
+    for(let i = 0; i < 3; i++){
+        
+fruit[i] = prompt("Ingresar el Nombre de una fruta:");
+    }
+    for(let i = 0; i < 3; i++){
+        if(fruit[i] != "manzana" && fruit[i] != "Manzana"){
+            document.write(`<p>Fruta: </p>` + fruit[i]);
+           
+        }
+    }
 }
 
 
