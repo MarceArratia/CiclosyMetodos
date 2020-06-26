@@ -34,19 +34,28 @@ function optionUno(){
 
 //2. Realizarle al usuario la pregunta “¿De qué color es el caballo blanco de Napoleón?”.
 function optionDos(){
-    
-    const white= prompt("De que Color es el Caballo Blanco de Napoleon?");
-     for(let i=0;0<white;i++){
-        if(whithe === "blanco" || white === "Blanco"){
-        alert("Su respuesta es correcta");
-        }else{  
-        prompt(white);
+    var white;
+    do {
+        white = prompt("De que Color es el Caballo Blanco de Napoleon?");
+        if(white === "blanco" || white === "Blanco"){
+            document.write(`<p><center>"Tu respuesta es correcta"</center></p>`);
+           
         }
-   
-       
+    } while (white != "blanco" && white != "Blanco");   
 }
 
+//3. En este ejercicio deberá calcular el promedio de notas del usuario. 
+function optionTres(){
+
+
+
+
 }
+
+
+
+
+
 
 
 
