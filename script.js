@@ -72,6 +72,55 @@ fruit[i] = prompt("Ingresar el Nombre de una fruta:");
     }
 }
 
+//5.Solicite al usuario escribir su nombre. 
+function optionCinco(){
+
+    var a = e = i = o = u = 0;
+
+        vectorLetras = consultarNombre();
+        
+        function consultarNombre(){
+            var pideTexto = window.prompt("Escribe tu nombre");
+            var textoRoto = pideTexto.toLowerCase().split("");
+            
+            
+            return textoRoto;
+        }        
+        
+        for(k=0;k < vectorLetras.length;k++){
+            
+            switch(vectorLetras[k]){
+                case "a":
+                case "à":
+                case "á":
+                    a++;
+                    break;
+                case "e":
+                case "é":
+                case "è":
+                    e++;
+                    break;
+                case "i":
+                case "í":
+                case "ì":
+                    i++;
+                    break;
+                case "o":
+                case "ó":
+                case "ò":
+                    o++;
+                    break;
+                case "u":
+                case "ú":
+                case "ù":
+                    u++;
+            }
+            
+        }
+        totalVocales = a+e+i+o+u;
+        alert("Tu nombre contiene "+totalVocales+ " vocales y "+(vectorLetras.length - totalVocales)+ " consonantes"); 
+}
+
 
 
 
